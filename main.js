@@ -18,7 +18,7 @@
         })
         // permission granted:
         .then(function (stream) {
-          video.src = window.URL.createObjectURL(stream);
+          video.src = stream;
           document.getElementById('btnCameraAccess').style.display = "none";
           document.getElementById('recgBtn').style.display = "block";
 
